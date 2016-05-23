@@ -355,7 +355,7 @@ public class PieChartRenderer: ChartDataRendererBase
                 
                 let value = usePercentValuesEnabled ? e.value / yValueSum * 100.0 : e.value
                 
-                let valueText = value < 5.0 ? "" : formatter.stringFromNumber(value)!
+                let valueText = value <= 5.0 ? "" : formatter.stringFromNumber(value)!
                 
 //                let valueText = formatter.stringFromNumber(value)!
                 
