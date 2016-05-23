@@ -118,7 +118,9 @@
     [data setValueFormatter:pFormatter];
     [data setValueFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:11.f]];
     [data setValueTextColor:UIColor.whiteColor];
+    [data setDrawValues:YES];
     
+    _chartView.drawSliceTextEnabled = NO;
     _chartView.data = data;
     [_chartView highlightValues:nil];
 }

@@ -133,7 +133,7 @@
         
         BarChartData *data = [[BarChartData alloc] initWithXVals:xVals dataSet:set];
         [data setValueFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:10.f]];
-        [data setDrawValues:NO];
+//        [data setDrawValues:NO];
         
         _chartView.data = data;
     }

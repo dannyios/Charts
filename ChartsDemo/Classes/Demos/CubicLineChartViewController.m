@@ -157,7 +157,7 @@
         
         LineChartData *data = [[LineChartData alloc] initWithXVals:xVals dataSet:set1];
         [data setValueFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:9.f]];
-        [data setDrawValues:NO];
+//        [data setDrawValues:NO];
         
         _chartView.data = data;
     }

@@ -126,7 +126,7 @@
     
     RadarChartData *data = [[RadarChartData alloc] initWithXVals:xVals dataSets:@[set1, set2]];
     [data setValueFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:8.f]];
-    [data setDrawValues:NO];
+//    [data setDrawValues:NO];
     
     _chartView.data = data;
 }

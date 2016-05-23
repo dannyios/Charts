@@ -354,7 +354,10 @@ public class PieChartRenderer: ChartDataRendererBase
                 let transformedAngle = rotationAngle + angle * phaseY
                 
                 let value = usePercentValuesEnabled ? e.value / yValueSum * 100.0 : e.value
-                let valueText = formatter.stringFromNumber(value)!
+                
+                let valueText = value < 5.0 ? "" : formatter.stringFromNumber(value)!
+                
+//                let valueText = formatter.stringFromNumber(value)!
                 
                 let sliceXBase = cos(transformedAngle * ChartUtils.Math.FDEG2RAD)
                 let sliceYBase = sin(transformedAngle * ChartUtils.Math.FDEG2RAD)
